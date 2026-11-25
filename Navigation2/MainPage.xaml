@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Stwórz nową notatkę" x:Name="fg"></Label>
+            <Entry x:Name="NameEntry" Placeholder="Wpisz nazwę"></Entry>
+            <Editor x:Name="DescEditor" Placeholder="Wpisz opis"></Editor>
+            <Label x:Name="fgdg"></Label>
+            <Button
+                Text="Stwórz" 
+                SemanticProperties.Hint="Stwórz notatke"
+                Clicked="OnCreateNote"/>
+            <CollectionView x:Name="NotesCollection" SelectionMode="Single" SelectionChanged="GoTo">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="1" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding title}" FontAttributes="Bold" TextColor="Red"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
