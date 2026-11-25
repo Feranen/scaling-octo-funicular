@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeveralPages.Models
+namespace Navigation2.Models
 {
     public class Note
     {

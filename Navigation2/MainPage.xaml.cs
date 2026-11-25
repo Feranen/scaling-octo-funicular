@@ -1,4 +1,4 @@
-﻿using SeveralPages.Models;
+﻿using Navigation2.Models;
 using System.Collections.ObjectModel;
 
 namespace Navigation2

@@ -1,6 +1,6 @@
-using SeveralPages.Models;
+using Navigation2.Models;
 
-namespace SeveralPages;
+namespace Navigation2;
 
 [QueryProperty(nameof(title), "title")]
 [QueryProperty(nameof(desc), "desc")]

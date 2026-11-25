@@ -1,4 +1,4 @@
-﻿using SeveralPages;
+﻿using Navigation2;
 
 namespace Navigation2
 {
